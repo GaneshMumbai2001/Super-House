@@ -102,14 +102,15 @@ const View = () => {
   const messageToDisplay = roomIdk && roomIdk.data && roomIdk.data.message;
   console.log("hello");
   return (
-    <div className="grid grid-cols-2">
-      <div>
-        <h1 className="text-6xl font-bold">
-          Welcome to{" "}
-          <a className="text-blue-600" href="https://huddle01.com">
-            Huddle01 SDK!
-          </a>
-        </h1>
+    <div className="grid ">
+      <div className="flex flex-col justify-center items-center w-full">
+        <h1 className="text-6xl font-bold text-center flex justify-center align:items-center h-full">
+  Welcome to{" "}
+  <a className="text-blue-600" href="https://huddle01.com">
+    Super House!
+  </a>
+</h1>
+
 
         <h2 className="text-2xl">Room State</h2>
         <h3 className="break-words">{JSON.stringify(state.value)}</h3>
